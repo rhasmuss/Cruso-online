@@ -35,9 +35,9 @@ export class Estudiante {
     private nombre: string;
     private apellido: string;
     private correo: string;
-    private direccion: Drieccion;
+    private direccion: Drieccion[];
 
-    constructor(nom: string, ap: string, corre: string, dir: Drieccion) {
+    constructor(nom: string, ap: string, corre: string, dir: Drieccion[]) {
         this.nombre = nom;
         this.apellido = ap;
         this.correo = corre;
@@ -49,9 +49,9 @@ export class Estudiante {
 
 export class Drieccion {
 
-    ciudad : string[];
-    barrio : string[];
-    calle : string[];
+    ciudad: string[];
+    barrio: string[];
+    calle: string[];
     constructor(ciud: string[], ba: string[], calle: string[]) {
         this.ciudad = ciud;
         this.barrio = ba;
