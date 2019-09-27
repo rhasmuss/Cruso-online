@@ -18,14 +18,14 @@ export class Docente {
     private correo: string;
     private profecion: string;
     private direcion: Drieccion;
-    
-    constructor(nom: string, ap: string, prof: string, corre: string,direc:Drieccion) {
+
+    constructor(nom: string, ap: string, prof: string, corre: string, direc: Drieccion) {
         this.nombre = nom;
         this.apellido = ap;
         this.profecion = prof;
         this.correo = corre;
-        this.direcion=direc;
-       
+        this.direcion = direc;
+
     }
 
 }
@@ -35,13 +35,13 @@ export class Estudiante {
     private nombre: string;
     private apellido: string;
     private correo: string;
-    private direccion:Drieccion;
+    private direccion: Drieccion;
 
-    constructor(nom: string, ap: string, corre: string,dir:Drieccion) {
+    constructor(nom: string, ap: string, corre: string, dir: Drieccion) {
         this.nombre = nom;
         this.apellido = ap;
         this.correo = corre;
-        this.direccion=dir;
+        this.direccion = dir;
 
     }
 
@@ -62,12 +62,12 @@ export class Curso {
     nombre: string;
     direccion: string;
     precio: number;
-    docente:Docente;
-    constructor(nom: string, dir: string, precio: number,doc:Docente) {
+    docente: Docente;
+    constructor(nom: string, dir: string, precio: number, doc: Docente) {
         this.nombre = nom;
         this.direccion = dir;
         this.precio = precio;
-        this.docente=doc;
+        this.docente = doc;
     }
 
 }
@@ -75,12 +75,12 @@ export class Curso {
 export class CompraCurso {
 
     fecha: string;
-    curso:Curso;
-    estuante:Estudiante;
-    constructor(fecha: string,curso:Curso,estud:Estudiante) {
+    curso: Curso;
+    estuante: Estudiante;
+    constructor(fecha: string, curso: Curso, estud: Estudiante) {
         this.fecha = fecha;
-        this.curso=curso;
-        this.estuante=estud;
+        this.curso = curso;
+        this.estuante = estud;
     }
 
 }
